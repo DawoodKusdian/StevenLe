@@ -1,0 +1,17 @@
+body{
+    background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/07/Pictures-3D-HD-Nature.jpg");
+}
+
+h1{
+    font-family: Aileron; color: blue;
+}
+#nav li{
+    display: inline;
+    background: #33ff33;
+    text-decoration:none;
+    margin-right: 30px;
+}
+
+a:hover { 
+    background-color: yellow;
+}
