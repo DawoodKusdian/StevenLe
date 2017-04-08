@@ -1,9 +1,9 @@
-
+@import url("http://fonts.googleapis.com/css?family=Ek+Mukta");
 body{
-    background-image:
-        url(img/skyline.jpg);
+    background-image:url(../img/Alps.jpg);
     margin: 0;
 }
+
 .logo{
   position: absolute;
   top: 0;
@@ -11,54 +11,92 @@ body{
 }
 h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 100px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
 
-
-.container{
-  position: relative;
-  width: 100%;
-  height: 0%;;
-  padding-bottom:  50.25%;
-}
-.video{
-  position: absolute;
-  margin: 100px;
-  width: 45%;
-  height: 45%;
+.topnav:after {
+	display: block;
+	clear: both;
 }
 
-#mytopnav,#footer{
-  background-color: #333;
-  overflow: hidden;
-}
-#mytopnav a, #footer a{
-  resize: both;
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  border-right: thick solid #ffffff;
+.menu-wrap {
+	width: 50%;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+	background: #3e3436;
+	padding-left: 200px;
+	padding-right: 200px;
 }
 
-#mytopnav a:hover,#footer a:hover {
-    background-color: #d8d8bc;
-}
-#mytopnav a:active,#footer a.active{
-  background-color: #4CAF50;
-  color: white;
+.menu {
+	width: 1000px;
+	margin: 0px auto;
+
 }
 
-li{
-  float: left;
+.menu li {
+	margin: 0px;
+	list-style: none;
+	font-family: 'Ek Mukta';
 }
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-  bottom: 0;
+
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+	text-decoration: none;
+}
+
+.menu li:hover > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+
+.menu > ul > li {
+    /*float:left;*/
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
 }
